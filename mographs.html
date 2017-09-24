@@ -1,0 +1,108 @@
+---
+layout: default
+title:  Mographs
+permalink: /mographs
+---
+
+<div class="mographs">
+
+  <p>I've always been curious about how 3D works, and in my spare time I started studying animation theory, texturing and 3d modelling on cinema 4d.</p>
+  <p>Every now and then I collaborate with a projection mapping studio founded by a friend of mine, here are some animations I enjoyed making during these years.</p>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/cubes.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/cubes.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/vangogh.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/vangogh.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/santemidio.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/santemidio.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/genova.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/genova.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/ghosts.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/ghosts.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+
+  <div class="mographs__item">
+    <button class="mographs__item__play-button">Play</button>
+    <video loop>
+      <source src="/assets/video/mographs/ship.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+      <source src="/assets/video/mographs/ship.webm" type='video/webm;codecs="vp8, vorbis"'/>
+    </video>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  // var playButtons = document.getElementsByClassName('mographs__item__play-button');
+  var allVideoElements = document.getElementsByTagName('video');
+
+  function pauseVideo(video) {
+    var button = video.parentNode.getElementsByClassName('mographs__item__play-button')[0];
+    video.pause();
+    button.innerText = 'Play'
+    button.classList.remove('is-faded');
+  }
+
+  function playVideo(video) {
+    for(var i = 0; i < allVideoElements.length; i++) {
+      pauseVideo(allVideoElements[i]);
+    }
+    var button = video.parentNode.getElementsByClassName('mographs__item__play-button')[0];
+    video.play();
+    button.innerText = 'Pause'
+    button.classList.add('is-faded');
+  }
+
+  function playButtonHandler() {
+    var video = this.parentNode.getElementsByTagName('video')[0];
+    togglePlay(video);
+  }
+
+  function clickVideoHandler() {
+    togglePlay(this);
+  }
+
+  function togglePlay(video) {
+    if(video.paused) {
+      playVideo(video);
+    } else {
+      pauseVideo(video);
+    }
+  }
+
+  for(var i = 0; i < allVideoElements.length; i++){
+    var video = allVideoElements[i];
+    var button = video.parentNode.getElementsByClassName('mographs__item__play-button')[0];
+    video.addEventListener("click", clickVideoHandler, false);
+    button.addEventListener("click", playButtonHandler, false);
+  }
+
+</script>

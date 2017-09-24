@@ -1,0 +1,93 @@
+---
+###
+# note: will result in an all-in-one-file stylesheet e.g. style.css
+#   in _config.yml add:
+#     sass:
+#       sass_dir: css
+#       style:    expanded
+---
+
+@import 'normalize';
+@import 'variables';
+@import 'utilities';
+@import 'modules';
+@import 'states';
+@import '../assets/fonts/proximanova.css';
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
+
+// Antialiasing
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ html {
+   box-sizing: border-box;
+   line-height: 1.2;
+   font-size: $font-size;
+   @include breakpoint($tablet) {
+     line-height: 1.4;
+   }
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+body {
+  font-family: $font-family;
+  color: $text-color;
+}
+
+a, a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-top: rem(10px);
+  @include breakpoint($tablet) {
+    margin-top: rem(36px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  font-size: .9rem;
+  margin-top: 4rem;
+  @include breakpoint($phablet) {
+    text-align: right;
+  }
+}

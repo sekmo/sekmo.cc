@@ -1,0 +1,27 @@
+###########
+# site.title
+
+title:    'Francesco Mari'
+subtitle: 'full stack human'
+
+
+nav:
+- { title: 'About',                href: '/' }
+- { title: 'Work',                 href: '/work' }
+- { title: 'Mographs',             href: '/mographs' }
+- { title: 'Interesting things',   href: '/interesting-things' }
+- { title: 'Notes',                href: '/notes' }
+
+
+#########################
+# more settings
+
+markdown: kramdown
+
+sass:
+  sass_dir: css
+  style:    expanded
+
+exclude:
+- README.md
+- LICENSE.md

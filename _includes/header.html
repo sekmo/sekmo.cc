@@ -1,0 +1,17 @@
+<p class="site-title">{{ site.title }}</p>
+<p class="site-subtitle">{{ site.subtitle }}</p>
+
+<ul class="nav">
+  {% for item in site.nav %}
+    {% if page.url == item.href %}
+      {% assign li_attribute = 'class="nav__item nav__item--current"' %}
+    {% else %}
+      {% assign li_attribute = 'class="nav__item"' %}
+    {% endif %}
+    {% if item.href contains 'http' %}
+       <li {{ li_attribute }}><a href="{{ item.href }}">{{ item.title }}</a></li>
+    {% else %}
+       <li {{ li_attribute }}><a href="{{ item.href | relative_url }}">{{ item.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

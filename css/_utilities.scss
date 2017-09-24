@@ -1,0 +1,32 @@
+// ==========================================================================
+// FUNCTIONS
+// ==========================================================================
+
+// Calculate rem values
+
+@function rem($target, $context: $font-size) {
+	@return ($target / $context) * 1rem;
+}
+
+
+
+
+
+
+// ==========================================================================
+// MIXINS
+// ==========================================================================
+
+// @include breakpoint($tablet){
+//   font-size: 1.1rem;
+// }
+@mixin breakpoint($points){
+  @media screen and (min-width: $points) {
+    @content;
+  }
+}
+@mixin breakpoint-max($points){
+  @media screen and (max-width: $points) {
+    @content;
+  }
+}
