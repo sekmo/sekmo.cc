@@ -7,7 +7,7 @@ subtitle: 'full stack human'
 
 nav:
 - { title: 'About',                href: '/' }
-- { title: 'Work',                 href: '/work' }
+- { title: 'Projects',             href: '/projects' }
 - { title: 'Mographs',             href: '/mographs' }
 - { title: 'Interesting things',   href: '/interesting-things' }
 - { title: 'Notes',                href: '/notes' }

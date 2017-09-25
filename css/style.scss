@@ -73,19 +73,9 @@ video {
 
 
 
-
-
-
-
-
-
-
-
-
-
 footer {
   text-align: center;
-  font-size: .9rem;
+  // font-size: .9rem;
   margin-top: 4rem;
   @include breakpoint($phablet) {
     text-align: right;
