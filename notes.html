@@ -7,11 +7,11 @@ permalink: /notes/
 <ul class="post-index">
   {% for post in site.posts %}
     <li class="post-index__post">
-      <span class="published-on">{{ post.date | date: "%-d %b %Y" }}</span>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {% for category in post.categories %}
       <a href="/categories/{{ category }}/" class="category"> #{{ category }} </a>
       {% endfor %}
+      <span class="published-on">{{ post.date | date: "%-d %b %Y" }}</span>
     </li>
   {% endfor %}
 </ul>

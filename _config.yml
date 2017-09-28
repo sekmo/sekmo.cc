@@ -18,6 +18,7 @@ nav:
 # more settings
 
 markdown: kramdown
+highlighter: rouge
 
 sass:
   sass_dir: css

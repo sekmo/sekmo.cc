@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why you should start learning Rails too"
+title:  "Hello procrastination"
 date:   2016-06-23 08:22:43 +0200
 categories: jekyll update
 ---
