@@ -3,7 +3,8 @@
 
 title:    'Francesco Mari'
 subtitle: 'full stack human'
-
+permalink: /notes/:title
+#permalink: /:year/:month/:day/:title
 
 nav:
 - { title: 'About',                href: '/' }

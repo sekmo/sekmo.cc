@@ -8,7 +8,9 @@
     {% include header.html %}
   </header>
 
-  <main class="content wrapper">
+  <main class="content post wrapper">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <time>{{ page.date | date_to_long_string }}</time>
     {{ content }}
   </main>
 

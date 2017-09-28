@@ -2,7 +2,7 @@
 
 <ul class="nav">
   {% for item in site.nav %}
-    {% if page.url == item.href %}
+    {% if (page.url == item.href or (item.href contains "/notes" and page.url contains "/notes/"))  %}
       {% assign li_attribute = 'class="nav__item nav__item--current"' %}
     {% else %}
       {% assign li_attribute = 'class="nav__item"' %}

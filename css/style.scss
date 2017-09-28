@@ -12,27 +12,24 @@
 @import 'utilities';
 @import 'modules';
 @import 'states';
-@import '../assets/fonts/proximanova.css';
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
-
-// Antialiasing
 
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
- html {
-   box-sizing: border-box;
-   line-height: 1.2;
-   font-size: $font-size;
-   @include breakpoint($tablet) {
-     line-height: 1.4;
-   }
+html {
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-size: $font-size;
+  @include breakpoint($tablet) {
+    line-height: 1.4;
+  }
  }
- *, *:before, *:after {
-   box-sizing: inherit;
- }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   font-family: $font-family;
@@ -54,8 +51,6 @@ video {
   height: auto;
 }
 
-
-
 .wrapper {
   width: 90%;
   max-width: 600px;
@@ -63,15 +58,13 @@ video {
   margin-right: auto;
 }
 
-.header {
+header {
   margin-top: rem(10px);
+  margin-bottom: rem(30px);
   @include breakpoint($tablet) {
     margin-top: rem(36px);
   }
 }
-
-
-
 
 footer {
   text-align: center;
