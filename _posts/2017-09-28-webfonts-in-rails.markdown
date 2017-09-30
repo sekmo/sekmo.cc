@@ -5,7 +5,7 @@ date:   2017-09-28 11:53:43 +0200
 categories: rails
 ---
 Some months ago I spent a couple of hours trying to get a webfont working with the Rails asset pipeline.
-I thought it was worth writing a turboguide on how to make it work without getting a headache.
+I thought it was worth writing a quick guide on how to make it work without getting a headache.
 
 1) Copy your beloved fonts in `vendor/assets/fonts`
 
