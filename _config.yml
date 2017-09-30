@@ -19,6 +19,7 @@ nav:
 
 markdown: kramdown
 highlighter: rouge
+input: GFM
 
 sass:
   sass_dir: css

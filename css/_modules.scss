@@ -106,7 +106,7 @@
 .mographs {
   &__item {
   position: relative;
-  cursor: pointer;
+  cursor: pointer !important;
     & > button {
       position: absolute;
       z-index: 2;
@@ -133,6 +133,9 @@
   padding-left: 0;
   &__post {
     margin-bottom: .7rem;
+    & > a {
+      text-decoration: none;
+    }
     .published-on {
       font-size: .8em;
       color: $text-color--light;
@@ -157,6 +160,9 @@
     display: inline-block;
     & > a {
       color: #9e9e9e;
+      &:not(:hover) {
+        text-decoration: none;
+      }
     }
   }
   & > li:not(:first-child):before {
