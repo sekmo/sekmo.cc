@@ -1,38 +1,46 @@
 .site-title {
   font-size: rem(22px);
   color: black;
-  // font-weight: bold;
   margin-bottom: 0;
   line-height: 1;
 }
 
 
-.site-subtitle {
-  font-size:   rem(22px);
-  font-weight: bold;
-  color:        grey;
-  margin-top: 0;
-}
-
-
 .nav {
   font-size: rem(16px);
+  @include breakpoint-max($phablet) {
+    font-size: rem(14px, $font-size--mobile);
+  }
   line-height: 1.6;
   padding: 0;
   list-style: none;
   &__item {
     display: inline-block;
     margin-bottom: .3rem;
+    @include breakpoint-max($phablet) {
+      margin-bottom: .7rem;
+    }
     &:not(:last-child) {
       margin-right: .5rem;
     }
     & > a {
       text-decoration: none !important;
       padding-bottom: 1px;
+      @include breakpoint-max($phablet) {
+        display: inline-block;
+        // font-size: .9em;
+        padding: .5rem 1rem;
+        border: 1px solid #eee;
+        border-radius: 3px;
+      }
     }
     & > a:hover,
     &--current > a {
       border-bottom: 1px solid #9e9e9e;
+      @include breakpoint-max($phablet) {
+        background: #f8f8f8;
+        border-color: #ccc;
+      }
     }
     @include breakpoint($phablet) {
       &:not(:last-child) {
@@ -49,6 +57,7 @@
   line-height: 1.6;
   .page-title {
     font-size: 1.4em;
+    line-height: 1.3;
     margin-bottom: 0;
   }
   time {
@@ -118,43 +127,6 @@
   }
 }
 
-
-.serendipity {
-  & > h3 {
-    margin-bottom: .5em;
-  }
-  &__section {
-    margin: -.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    &__things {
-      position: relative;
-      font-size: .7rem;
-      margin: .5rem;
-      width: calc(100%/2 - 1rem);
-      @include breakpoint($tablet) {
-        width: calc(100%/3 - 1rem);
-      }
-      & > h4 {
-        font-size: .9rem;
-        line-height: 1.1;
-        margin-top: .5em;
-        margin-bottom: .5em;
-        // position: absolute;
-        // top: 0;
-        // left: .5rem;
-        & > a {
-          // color: white;
-          text-decoration: none;
-        }
-      }
-      & > p {
-        margin-top: .3em;
-      }
-    }
-  }
-}
 
 .post-index {
   list-style: none;

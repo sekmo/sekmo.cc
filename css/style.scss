@@ -21,10 +21,11 @@
 
 html {
   box-sizing: border-box;
-  line-height: 1.2;
-  font-size: $font-size;
-  @include breakpoint($tablet) {
-    line-height: 1.4;
+  line-height: 1.5;
+  font-size: $font-size--mobile;
+  @include breakpoint($phablet) {
+    line-height: 1.6;
+    font-size: $font-size;
   }
  }
 
@@ -68,10 +69,6 @@ header {
 }
 
 footer {
-  text-align: center;
-  // font-size: .9rem;
+  text-align: right;
   margin-top: 4rem;
-  @include breakpoint($phablet) {
-    text-align: right;
-  }
 }

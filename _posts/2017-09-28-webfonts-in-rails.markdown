@@ -33,6 +33,6 @@ sprocket helper `font_url` to get the font location.
 }
 ```
 
-4) Run the command **`rails assets:precompile RAILS_ENV=production`**
+4) Run the command `rails assets:precompile RAILS_ENV=production`
 
 After issuing this command your font assets will be fingerprinted and copied to `public/assets`, and `font_url` knows how to get them properly :-)

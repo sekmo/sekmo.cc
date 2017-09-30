@@ -205,10 +205,19 @@
   color: #bbbbbb;
 }
 .highlight {
-  background-color: #f8f8f8;
+  background: #f8f8f8;
   padding: 1em;
   border-radius: 3px;
   overflow-x: auto;
-  font-size: rem(15px);
   letter-spacing: -0.25px;
+  line-height: rem(22px);
+}
+code {
+  font-family: 'menlo', 'consolas', monospace;
+  font-size: rem(14px);
+}
+:not(pre)>code {
+  background: #f8f8f8;
+  white-space: nowrap;
+  padding: 3px 5px;
 }
