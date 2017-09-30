@@ -10,7 +10,7 @@ nav:
 - { title: 'About',                href: '/' }
 - { title: 'Projects',             href: '/projects' }
 - { title: 'Mographs',             href: '/mographs' }
-- { title: 'Interesting things',   href: '/interesting-things' }
+- { title: 'Interesting things',   href: '/serendipity' }
 - { title: 'Notes',                href: '/notes' }
 
 

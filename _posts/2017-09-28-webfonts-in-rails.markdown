@@ -17,8 +17,8 @@ Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fo
 Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 ```
 
-3) Copy your font stylesheet to `vendor/stylesheets/merriweather.scss` and use the `font_url`
-sprocket helper to get the font location.
+3) Copy your font stylesheet to `vendor/stylesheets/merriweather.scss` and use the
+sprocket helper `font_url` to get the font location.
 
 ```ruby
 @font-face {
@@ -27,7 +27,7 @@ sprocket helper to get the font location.
   src: font_url('merriweather-webfont.eot?iefix') format('eot'),
     font_url('merriweather-webfont.woff') format('woff'),
     font_url('merriweather-webfont.ttf') format('truetype'),
-    font_url('merriweather-webfont.svg#webfontFuT9mX6Y') format('svg');
+    font_url('merriweather-webfont.svg#svginfoUuR4hF7w') format('svg');
   font-weight: 300;
   font-style: normal;
 }
@@ -35,4 +35,4 @@ sprocket helper to get the font location.
 
 4) Run the command **`rails assets:precompile RAILS_ENV=production`**
 
-After issuing this command your font assets will be fingerprinted and copied to `public/assets`, and `font_url` knows how to get fingerprinted assets :-)
+After issuing this command your font assets will be fingerprinted and copied to `public/assets`, and `font_url` knows how to get them properly :-)
