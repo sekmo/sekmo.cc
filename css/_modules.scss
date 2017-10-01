@@ -3,25 +3,28 @@
   color: black;
   margin-bottom: 0;
   line-height: 1;
+  & > a {
+    text-decoration: none !important;
+  }
 }
 
 
 .nav {
+  padding: 0;
+  list-style: none;
   font-size: rem(16px);
   @include breakpoint-max($phablet) {
     font-size: rem(14px, $font-size--mobile);
   }
   line-height: 1.6;
-  padding: 0;
-  list-style: none;
   &__item {
     display: inline-block;
     margin-bottom: .3rem;
     @include breakpoint-max($phablet) {
       margin-bottom: .7rem;
-    }
-    &:not(:last-child) {
-      margin-right: .5rem;
+      &:not(:last-child) {
+        margin-right: .5rem;
+      }
     }
     & > a {
       text-decoration: none !important;
@@ -42,10 +45,10 @@
         border-color: #ccc;
       }
     }
-    @include breakpoint($phablet) {
-      &:not(:last-child) {
-        margin-right: 0;
-      }
+    @include breakpoint($phablet+1) {
+      // &:not(:last-child) {
+      //   margin-right: 0;
+      // }
       &:not(:first-child):before {
         content: "• ";
       }

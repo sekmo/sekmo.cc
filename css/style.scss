@@ -23,7 +23,7 @@ html {
   box-sizing: border-box;
   line-height: 1.5;
   font-size: $font-size--mobile;
-  @include breakpoint($phablet) {
+  @include breakpoint($tablet) {
     line-height: 1.6;
     font-size: $font-size;
   }
