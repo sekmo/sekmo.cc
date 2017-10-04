@@ -9,7 +9,7 @@ permalink: /notes/:title
 nav:
 - { title: 'About',                href: '/' }
 - { title: 'Projects',             href: '/projects' }
-- { title: 'Mographs',             href: '/mographs' }
+#- { title: 'Mographs',             href: '/mographs' }
 - { title: 'Interesting things',   href: '/serendipity' }
 - { title: 'Notes',                href: '/notes' }
 

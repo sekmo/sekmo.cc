@@ -3,6 +3,7 @@ layout: post
 title:  "Hello mondo"
 date:   2017-09-25 11:53:43 +0200
 categories: personal
+permalink: notes/hello-mondo
 ---
 
 Welcome to my brand new website! 🎉<br>This section comes from my wish to give back to the blog community: without all the free resources we're able to find on blogs and websites, this world would be a much poorer place.

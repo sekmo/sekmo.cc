@@ -9,4 +9,4 @@ After 5 years of agency experience and 2 years as freelancer (design, frontend, 
 
 I’m a super fan of the GTD principles and the Rework manifesto. I believe in ethics, simplicity, and purpose.
 
-Movie snob, typography lover, and UX enthusiast. I love designing things that really help people in their everyday life.
+Movie snob, typography lover, and UX enthusiast. I love building useful things that really help people in their everyday life.
