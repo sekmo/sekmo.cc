@@ -7,11 +7,12 @@ permalink: /notes/:title
 #permalink: /:year/:month/:day/:title
 
 nav:
-- { title: 'About',                href: '/' }
-- { title: 'Projects',             href: '/projects' }
-#- { title: 'Mographs',             href: '/mographs' }
-- { title: 'Interesting things',   href: '/serendipity' }
-- { title: 'Notes',                href: '/notes' }
+- { title: 'About', href: '/' }
+- { title: 'Projects', href: '/projects' }
+- { title: 'Resume', href: '/assets/pdf/francesco-mari-resume.pdf', target: 'blank' }
+- { title: 'Interesting things', href: '/serendipity' }
+- { title: 'Mographs', href: '/mographs' }
+#- { title: 'Notes',                href: '/notes' }
 
 
 #########################
