@@ -7,10 +7,15 @@
     {% else %}
       {% assign li_attribute = 'class="nav__item"' %}
     {% endif %}
-    {% if item.href contains 'http' %}
-       <li {{ li_attribute }}><a href="{{ item.href }}">{{ item.title }}</a></li>
+    {% if (item.target == 'blank') %}
+      {% assign target = 'target="_blank"' %}
     {% else %}
-       <li {{ li_attribute }}><a href="{{ item.href | relative_url }}">{{ item.title }}</a></li>
+      {% assign target = nil %}
+    {% endif %}
+    {% if item.href contains 'http' %}
+       <li {{ li_attribute }}><a href="{{ item.href }}" {{target}}>{{ item.title }}</a></li>
+    {% else %}
+       <li {{ li_attribute }}><a href="{{ item.href | relative_url }}" {{target}}>{{ item.title }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
